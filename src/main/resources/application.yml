@@ -1,0 +1,7 @@
+spring:
+  main:
+    web-application-type: none
+
+http-client:
+  host: http://localhost:1080
+  take-my-books-uri: /take-my-books

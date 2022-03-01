@@ -1,0 +1,15 @@
+[
+  {
+    "httpRequest": {
+      "method" : "PUT",
+      "path": "/take-my-books"
+    },
+    "httpResponse": {
+      "body": {
+        "status": "OK",
+        "code": "BIBLIOTECA9999"
+      }
+
+    }
+  }
+]

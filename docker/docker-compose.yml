@@ -1,0 +1,15 @@
+version: "2.4"
+services:
+  mockServer:
+    image: mockserver/mockserver:mockserver-5.12.0
+    command: -logLevel DEBUG -serverPort 1090
+    container_name: mock-server-cursosp2
+    ports:
+      - 1080:1090
+    environment:
+      MOCKSERVER_PROPERTY_FILE: /config/mockserver.properties
+      MOCKSERVER_INITIALIZATION_JSON_PATH: /config/initializerJson.json
+    volumes:
+      - type: bind
+        source: ./config
+        target: /config
